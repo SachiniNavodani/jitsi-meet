@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars, no-var, max-len */
 
 var interfaceConfig = {
+     CANVAS_EXTRA: 104,
+     CANVAS_RADIUS: 0,
+     SHADOW_COLOR: '#ffffff',
     // TO FIX: this needs to be handled from SASS variables. There are some
     // methods allowing to use variables both in css and js.
     DEFAULT_BACKGROUND: '#474747',
@@ -16,7 +19,7 @@ var interfaceConfig = {
     DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow User',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
     SHOW_JITSI_WATERMARK: true,
-    JITSI_WATERMARK_LINK: 'https://jitsi.org',
+    JITSI_WATERMARK_LINK: 'https://meetrix.xyz',
 
     // if watermark is disabled by default, it can be shown only for guests
     SHOW_WATERMARK_FOR_GUESTS: true,
@@ -40,16 +43,16 @@ var interfaceConfig = {
     TOOLBAR_BUTTONS: [
 
         // main toolbar
-        'microphone', 'camera', 'desktop', 'invite', 'fullscreen', 'fodeviceselection', 'hangup',
+        'microphone', 'camera', 'desktop', 'invite', 'fullscreen', 'hangup',
 
         // extended toolbar
-        'profile', 'contacts', 'info', 'chat', 'recording', 'etherpad', 'sharedvideo', 'settings', 'raisehand', 'videoquality', 'filmstrip' ],
+        'profile', 'contacts', 'info', 'chat', 'recording', 'etherpad', 'sharedvideo','sip', 'settings', 'raisehand', 'videoquality', 'filmstrip' ],
 
     /**
      * Main Toolbar Buttons
      * All of them should be in TOOLBAR_BUTTONS
      */
-    MAIN_TOOLBAR_BUTTONS: [ 'microphone', 'camera', 'desktop', 'invite', 'fullscreen', 'fodeviceselection', 'hangup' ],
+    MAIN_TOOLBAR_BUTTONS: [ 'microphone', 'camera', 'desktop', 'invite', 'fullscreen', 'hangup' ],
     SETTINGS_SECTIONS: [ 'language', 'devices', 'moderator' ],
     INVITE_OPTIONS: [ 'invite', 'dialout', 'addtocall' ],
 
@@ -112,6 +115,7 @@ var interfaceConfig = {
      * @type {number}
      */
     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
+    MOBILE_APP_PROMO:true
 
     /*
      * If indicated some of the error dialogs may point to the support URL for
