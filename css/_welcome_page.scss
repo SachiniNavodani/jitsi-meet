@@ -120,18 +120,22 @@
 
 #welcome_page_header
 {
-    background-image: url(../images/welcome_page/pattern-header.png);
-    height: 290px;
+     background-image: url(../images/welcome_page/landingpage.jpg);
+    height: 100%;
     width: 100%;
     position: absolute;
+    background-repeat: no-repeat;
+    background-color: #012338;
+    background-posision: center;
+    background-size: 100% 100%;
 }
 
 #welcome_page_main
 {
-    background-image:url(../images/welcome_page/pattern-body.png);
+    background-image:url(../images/welcome_page/landingpage.jpg);
     width: 100%;
     position: absolute;
-    margin-top: 290px;
+    margin-top: 100%;
 }
 
 #brand_header
