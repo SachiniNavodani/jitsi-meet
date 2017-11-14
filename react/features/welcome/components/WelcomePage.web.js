@@ -7,6 +7,7 @@ import { translate } from '../../base/i18n';
 import { Watermarks } from '../../base/react';
 
 import { AbstractWelcomePage, _mapStateToProps } from './AbstractWelcomePage';
+import Pricing from './Pricing';
 
 /**
  * The Web container rendering the welcome page.
@@ -254,10 +255,8 @@ class WelcomePage extends AbstractWelcomePage {
     _renderMain() {
         return (
             <div id = 'welcome_page_main'>
-                <div id = 'features'>
-                    {
-                        this._renderFeatureRow(1, 5)
-                    }
+                <div>
+                    <Pricing />
                 </div>
             </div>
         );
